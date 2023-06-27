@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(4, 20, 16, 1);
+}
+.btn1{
+    border: 2px solid rgba(67, 223, 155, 1);
+}
+.btn2{
+    background-image: linear-gradient(to bottom,rgba(67, 223, 155, 1),
+    rgba(61, 186, 181, 1));
+    border: 2px solid rgba(67, 223, 155, 1);
+}
+
