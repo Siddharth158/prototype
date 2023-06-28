@@ -10,58 +10,63 @@
 </head>
 
 <body>
-  <nav class="flex justify-around">
-    <div class="logo flex">
-      <div class="logo_img m-4 w-16">
+  <nav class="flex justify-around items-center">
+    <div class="flex">
+      <div class="m-4 w-16">
         <img src="./images/hand.png" alt="logo" />
       </div>
       <h1 class="my-4 text-white p-1">
         <a class="cursor-pointer" href="">Job deal</a>
       </h1>
     </div>
-    <div class="content flex">
-      <h1 class="m-4 text-white">
+    <div id="nav_content" class="flex items-center bg-[#041410]">
+      <h1 class="m-[1vw] text-white">
         <a class="cursor-pointer" href="">Find a Job</a>
       </h1>
-      <h1 class="m-4 text-white">
+      <h1 class="m-[1vw] text-white">
         <a class="cursor-pointer" href="">Hire someone</a>
       </h1>
-      <h1 class="m-4 text-white">
+      <h1 class="m-[1vw] text-white">
         <a class="cursor-pointer" href="">How it works</a>
       </h1>
-      <h1 class="m-4 text-white">
+      <h1 class="m-[1vw] text-white">
         <a class="cursor-pointer" href="">About us</a>
       </h1>
-      <h1 class="m-4 text-white">
+      <h1 class="m-[1vw] text-white">
         <a class="cursor-pointer" href="">Partners</a>
       </h1>
     </div>
-    <div class="login m-4">
+    <div id="login" class="login m-4">
       <button class="border-2 text-white px-2 py-1 mx-2 btn1 border-sky-green rounded-sm">
         login
       </button>
       <button class="btn2 px-2 py-1 mx-2 font-bold rounded-sm">Create account</button>
     </div>
+    <div id="toggle_btn" class="hidden w-[7vw] h-[7vw] flex flex-col items-center justify-evenly border-[#43df9b] border-2">
+      <div class="w-3/5 mx-auto border-[#43df9b] border-t-2"></div>
+      <div class="w-3/5 mx-auto border-[#43df9b] border-t-2"></div>
+      <div class="w-3/5 mx-auto  border-[#43df9b] border-t-2"></div>
+    </div>
   </nav>
   <!-- ------------ end of nav bar ------------ -->
 
-  <div class="mid_section flex justify-between my-3">
-    <div class="m-20">
+  <div class="flex lg:flex-row flex-col lg:justify-between items-center my-3 text-center lg:text-left">
+    <div class="m-5 lg:m-20">
       <h1 class="text-white text-3xl mx-4 my-2">WELCOME TO THE</h1>
       <h1 class="mx-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#43DF9B] to-[#3DBAB5]">
         FUTURE OF CONNECTIONS
       </h1>
-      <p class="text-[#CCCCCC] m-4 w-96">
+      <p class="text-[#CCCCCC] lg:m-4 md:mx-auto m-6 md:w-2/3 lg:w-96">
         JobDeal is a modern online platform that transforms the traditional
         job market by directly linking Employers and Freelancers in a secure
         and flexible manner.
       </p>
-      <button class="btn2 px-2 py-1 mx-4 font-bold">Create Account</button>
-      <button class="border-2 text-[#43DF9B] px-2 py-1 mx-4 btn1 border-sky-green rounded-sm">
+      <button class="btn2 px-2 py-1 mx-2 md:mx-4 font-bold">Create Account</button>
+      <button class="border-2 text-[#43DF9B] px-2 py-1 md:mx-4 btn1 border-sky-green rounded-sm">
         Show me how it works
       </button>
     </div>
-    <div class="w-4/6">
+    <div class="lg:w-4/6 w-5/6 mb-2">
       <img src="./images/shakehand.png" alt="" />
     </div>
   </div>
@@ -167,47 +172,47 @@
     <div class="w-20 hidden p-2 xl:block">
       <img src="./images/arrow.png" alt="" />
     </div>
-    <div class="bg-[#152A24] w-[90vw] xl:w-[50rem] h-32 items-center p-8 flex justify-between overflow-hidden rounded-md">
-      <ul>
-        <li class="w-[30rem] text-sm list-decimal">
+    <div class="bg-[#152A24] w-[90vw] xl:w-[50rem] h-32 items-center p-8 flex justify-between overflow-hidden rounded-md relative">
+      <ul class="relative z-10">
+        <li class=" xl:w-[30vw] text-sm list-decimal">
           Create an account, set your location and fill out your profile.
         </li>
-        <li class="w-[30rem] text-sm  list-decimal list-outside">
+        <li class="xl:w-[30vw] text-sm  list-decimal list-outside">
           Go to your homepage, and browse through the “Available Near You”
           section, to apply for jobs.
         </li>
-        <li class="w-[30rem] text-sm list-decimal">
+        <li class="xl:w-[30vw] text-sm list-decimal">
           Apply to any suitable job if you're available got the skills, and
           get hired.
         </li>
       </ul>
-      <div class="w-44 relative left-20 h-32 -skew-x-[30deg] bg-gradient-to-bl from-[#1A4741] to-[#132C26]"></div>
+      <div class=" w-44 absolute  left-[70vw] sm:relative sm:left-20 h-32 -skew-x-[30deg] bg-gradient-to-bl from-[#1A4741] to-[#132C26]"></div>
     </div>
   </div>
-  <div class="w-11/12 flex xl:justify-around items-end xl:items-center flex-col xl:flex-row my-4 m-auto text-white  h-24">
+  <div class="w-11/12 flex xl:justify-around items-end xl:items-center flex-col xl:flex-row my-4 m-auto text-white">
     <div class="text-right xl:text-left">
       <h1 class="text-3xl font-semibold mb-3">As a Client</h1>
-      <p class="w-96 font-thin">Find and hire top freelance talent for any project, big or small.</p>
+      <p class="w-96 font-thin mb-4">Find and hire top freelance talent for any project, big or small.</p>
     </div>
     <div  class="w-20 hidden p-2 xl:block">
       <img src="./images/arrow.png" alt="" />
     </div>
-    <div class="bg-[#152A24] w-[90vw] xl:w-[50rem] h-32 items-center p-8 flex justify-between rounded-md overflow-hidden relative">
-      <ul>
-        <li class="w-[30rem] text-sm list-decimal">
+    <div class="bg-[#152A24] w-[90vw] xl:w-[50rem] items-center px-8 py-6 flex justify-between overflow-hidden rounded-md relative">
+      <ul class="relative z-20">
+        <li class="xl:w-[30rem] text-sm list-decimal">
           Create an account, specify your location, and complete your profile.
         </li>
-        <li class="w-[30rem] text-sm list-outside list-decimal">
+        <li class="xl:w-[30rem] text-sm list-outside list-decimal">
           On your homepage, click on “Post a job”, and fill out the required details (shouldn't take 5 minutes)
         </li>
-        <li class="w-[30rem] text-sm list-decimal">
+        <li class="xl:w-[30rem] text-sm list-decimal">
           Create the Job Post and receive offers from available and skilled
           freelancers
         </li>
       </ul>
-      <div class="w-36 h-32 bg-gradient-to-bl from-[#18423C] to-[#132D27] -skew-x-[30deg] absolute right-16 z-10  ">
+      <div class="w-40 h-full bg-gradient-to-bl from-[#18423C] to-[#132D27] -skew-x-[30deg] absolute right-16 z-10  ">
       </div>
-      <div class="w-40 h-32 bg-gradient-to-bl from-[#20635E] to-[#143B35] absolute right-0 "></div>
+      <div class="w-40 h-full bg-gradient-to-bl from-[#20635E] to-[#143B35] absolute right-0 "></div>
     </div>
 
   </div>
@@ -215,39 +220,39 @@
 
 
   <!--------------------- Refer to Earn ------------------------->
-  <div class="flex justify-between items-center mx-10 my-24 p-8 bg-[#152A24] rounded-2xl backdrop-blur-[90px] relative overflow-hidden">
-    <div class="flex flex-col p-4 ml-[20px]">
+  <div class="flex flex-col lg:flex-row justify-between lg:items-center mx-2 md:mx-10 my-24 lg:py-8 bg-[#152A24] rounded-2xl backdrop-blur-[90px] relative overflow-hidden">
+    <div class="flex flex-col p-4 mt-[2vw] lg:ml-[2vw]">
       <p class="leading-10 text-white text-5xl font-semibold mb-5">
         Refer a Freelancer.<br />Earn Rewards.
       </p>
-      <p class="w-[27vw] text-stone-300 text-[15px] font-normal leading-7 mb-5">
+      <p class="lg:w-[27vw] text-stone-300 text-[15px] font-normal leading-7 mb-5">
         Earn rewards by inviting friends to join JobDeal. You’ll receive a
         10%
         commission on their profits as a thank you for supporting our
         community.
       </p>
-      <button class="btn2 px-2 py-1 rounded-sm font-bold w-40">
+      <button class="btn2 px-2 py-1 rounded-sm font-bold w-2/5 m-auto xl:w-40">
         Get Started
       </button>
     </div>
-    <div class="flex relative">
-      <div class="w-[30rem] mr-44">
+    <div class="flex relative items-center">
+      <div class="m-auto w-4/5 lg:m-0 lg:w-[30rem] lg:mr-[7vw]">
         <img class="" src="./images/mac.png" />
       </div>
-      <div class="w-96 p-2 bg-neutral-800 bg-opacity-10 rounded-md border backdrop-blur-[68px] absolute top-10 right-4 text-white">
-          <h1 class="font-semibold text-sm">We have revolutionized the job hunting!</h1>
-          <p class="font-thin text-sm">Our algorithm ensures that you land the best gigs in record time.</p>
+      <div class=" w-2/3 md:w-2/4 lg:w-[28vw] p-1 lg:p-2 bg-neutral-800 bg-opacity-10 rounded-md border backdrop-blur-[68px] absolute top-[3vw] right-[1vw] md:top-[10vw] lg:top-10 lg:right-[2vw] text-white">
+          <h1 class="font-semibold text-xs sm:text-sm">We have revolutionized the job hunting!</h1>
+          <p class="font-thin text-xs sm:text-sm">Our algorithm ensures that you land the best gigs in record time.</p>
       </div>
-      <div class="w-96 p-2 bg-neutral-800 bg-opacity-10 rounded-md border backdrop-blur-[64px] absolute bottom-14 -left-20 text-white">        
-          <h1 class="font-semibold text-sm">Hire reliable hands with Ease</h1>
-          <p class="font-thin text-sm">We'll connect you with top talent for the job.</p>
-          <p class="font-thin text-sm">Experts with the required skills to get it done.</p>
+      <div class=" w-2/3 md:w-2/5 lg:w-[25vw] p-1 lg:p-2 bg-neutral-800 bg-opacity-10 rounded-md border backdrop-blur-[64px] absolute left-[2vw] bottom-[6vw] md:bottom-[10vw] lg:bottom-14 lg:left-[-7vw] text-white">        
+          <h1 class="font-semibold text-xs xl:text-sm">Hire reliable hands with Ease</h1>
+          <p class="font-thin text-xs xl:text-sm">We'll connect you with top talent for the job.</p>
+          <p class="font-thin text-xs xl:text-sm">Experts with the required skills to get it done.</p>
       </div>
       
     </div>
-    <div class="w-80 h-96 absolute -z-10 -right-6 -skew-x-[30deg] bg-gradient-to-bl from-[#2B827D] to-[#132D27]"></div>
-      <div class="w-80 h-96 absolute -z-10 right-64 -skew-x-[30deg] bg-gradient-to-bl from-[#2A857F] to-[#132722]"></div>
-      <div class="w-80 h-96 absolute -z-10 right-[33rem] -skew-x-[30deg] bg-gradient-to-bl from-[#1A4A45] to-[#152A24]"></div>
+    <div class=" w-[30vw] xl:w-80 h-full absolute -z-10 right-[7vw] xl:-right-6 -skew-x-[30deg] bg-gradient-to-bl from-[#2B827D] to-[#132D27]"></div>
+      <div class="w-[30vw] xl:w-80 h-full absolute -z-10 right-[35vw] xl:right-64 -skew-x-[30deg] bg-gradient-to-bl from-[#2A857F] to-[#132722]"></div>
+      <div class="w-[30vw] xl:w-80 h-full absolute -z-10 right-[60vw] xl:right-[33rem] -skew-x-[30deg] bg-gradient-to-bl from-[#1A4A45] to-[#152A24]"></div>
   </div>
 
   <!-- -------------------footer---------------- -->
@@ -262,7 +267,7 @@
       </div>
     </div>
     <div class=" w-5/6 lg:w-1/2 bg-[#204138] relative rounded-md my-2 mx-4">
-      <input class=" h-12 bg-[#204138] p-2 text-white font-semibold rounded-md" type="email"
+      <input class="w-full h-12 bg-[#204138] p-2 text-white font-semibold rounded-md" type="email"
         placeholder="Email" />
       <button class="btn2 px-2 py-1 font-bold absolute bottom-2 right-2 lg:right-[0.5rem] rounded-sm">
         Subscribe
@@ -290,6 +295,10 @@
       </div>
     </div>
   </div>
+
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

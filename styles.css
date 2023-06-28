@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(4, 20, 16, 1);
+    background-color: #041410;
 }
 .btn1{
     border: 2px solid rgba(67, 223, 155, 1);
@@ -8,5 +8,20 @@ body{
     background-image: linear-gradient(to bottom,rgba(67, 223, 155, 1),
     rgba(61, 186, 181, 1));
     border: 2px solid rgba(67, 223, 155, 1);
+}
+
+@keyframes toggle{
+    0% {
+transform: translateX(11rem);
+    }
+    100%{
+        transform: translateX(-11rem);
+    }
+}
+.animation{
+    /* transition:all  10s; */
+    /* transform: translateX(-11rem); */
+    /* background-color: ; */
+    animation: toggle 0.5s forwards;
 }
 
